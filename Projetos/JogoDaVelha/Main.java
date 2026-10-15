@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
-        boolean vez = true, vitoria = false;
+        boolean vez = true, vitoria = false, fim = false, jogadavalida = false;
         String nome1, nome2, jogada;
-        char resposta;
+        char resposta, simbolo1, simbolo2;
 
         System.out.print("começaremos o jogo da velha");
 
@@ -15,16 +15,16 @@ public class Main {
         System.out.println(nome1 + " vc vai querer (X) ou (O) para te representar?");
         resposta = scan.next().charAt(0);
 
-        if(resposta == "X" || resposta == "x"){
+        if(resposta == 'X' || resposta == 'x'){
             if (!vez){
                 jogada = "X";
             }
-        }
-
-        if(resposta == "O" || resposta == "o"){
+        } else if(resposta == 'O' || resposta == 'o'){
             if (vez){
                 jogada = "O";
             }
+        } else {
+            System.out.println("por favor, escolha 'X' ou 'O'");
         }
 
         System.out.println("nome do jogador 2:");
@@ -33,9 +33,9 @@ public class Main {
         System.out.println("A partida começa!");
 
         for(int i = 0; i < 3; i++){
-                System.out.println("__________");
-            for(int j = 0; j < 3; j++){
                 System.out.print("|");
+            for(int j = 0; j < 3; j++){
+                System.out.println("______________");
             }
         }
 
@@ -60,4 +60,3 @@ public class Main {
     scan.close();
     }
 }
-
