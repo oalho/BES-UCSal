@@ -1,7 +1,6 @@
 package Biblioteca;
 import java.util.Scanner;
 
-import Restaurante.Cliente;
 public class ExecutarBiblioteca {
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
