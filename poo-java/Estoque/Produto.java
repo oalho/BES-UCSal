@@ -1,4 +1,4 @@
-package POO1Estoque;
+package Estoque;
 
 public class Produto{
     private String nome;

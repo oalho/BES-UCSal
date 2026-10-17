@@ -1,4 +1,4 @@
-package POO1Estoque;
+package Estoque;
 import java.util.Scanner;
 
 public class ExecutarEstoque{

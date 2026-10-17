@@ -1,4 +1,4 @@
-package POO3Funcionário;
+package Funcionário;
 
 public class Funcionario{
 

@@ -1,4 +1,4 @@
-package POO9Funcionarios;
+package Funcionarios;
 
 public class Empregado {
 	private Integer id;

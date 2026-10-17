@@ -8,21 +8,23 @@ public class Execucao {
         System.out.println("quantos funcionarios deseja manipular?");
         int trabalhadores = scan.nextInt();
 
-        Departamento departamento = new Departamento(nome, matricula, funcionario);
+       
         for (int i = 0; i < trabalhadores; i ++){
-        System.out.println("nome do funcionario");
-        String nome = scan.next();
-        System.out.println("matricula");
-        Integer matricula = scan.nextInt();
-        System.out.println("salario");
-        Float salario = scan.nextFloat();
-        Funcionario funcionario = new Funcionario(nome, matricula, salario);
-        
-        departamento.addFuncionario(funcionario);
+            System.out.println("nome do funcionario");
+            String nome = scan.next();
+            System.out.println("matricula");
+            Integer matricula = scan.nextInt();
+            System.out.println("salario");
+            Float salario = scan.nextFloat();
+            Funcionario funcionario = new Funcionario(nome, matricula, salario);
+            
+            Departamento departamento = new Departamento(nome, matricula, funcionario);
+            departamento.addFuncionario(funcionario);
+            System.out.println("finalizado. Resumo:s");
+            System.out.println(departamento);
         }
 
-        System.out.println("finalizado. Resumo:s");
-        System.out.println(departamento);
+        
     scan.close();
     }
 }

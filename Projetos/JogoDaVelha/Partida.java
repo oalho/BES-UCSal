@@ -31,8 +31,7 @@ public class Partida {
         String nomeJogador2 = scan.next();
         Jogador jogador2 = new Jogador(nomeJogador2, simbolo);
 
-        
-
+        gerarTabuleiro();
 
     scan.close();
     }

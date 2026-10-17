@@ -1,5 +1,5 @@
 package JogoDaVelha;
-
+import JogoDaVelha.Jogador;
 public class Tabuleiro {
     char[][] tabuleiro = new char[3][3];
     private boolean vez = false, jogadavalida = false, vitoria = false, fim = false;
@@ -55,12 +55,9 @@ public class Tabuleiro {
 
     public boolean fimPartida(){
         if(vitoria){
-            if(vez){
-                System.out.println(nome + " a vitória é sua! Parabéns!");
-            } else{
-                System.out.println(nomeJogador2 + " a vitória é sua! Parabéns");
-            }
-        
+            System.out.println(nome.Jogador + " , parabéns!");
+            System.out.println("A vitória é sua!");
+
             fim = true;
         }
 

@@ -1,4 +1,4 @@
-package POO7Pensionato;
+package Pensionato;
 import java.util.Scanner;
 public class ExecutarQuarto {
     public static void main (String[]args){

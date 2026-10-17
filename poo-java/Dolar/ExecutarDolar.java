@@ -1,4 +1,4 @@
-package POO5Dolar;
+package Dolar;
 import java.util.Scanner;
 
 public class ExecutarDolar {
@@ -6,11 +6,12 @@ public class ExecutarDolar {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Ola! Informe quantos dólares deseja obter");
+        double d = scan.nextDouble();
 
-        Dolar d = new Dolar();
+        Dolar dolar = new Dolar(d);
+        dolar.convert();
 
-        d = scan.nextDouble();
-        
-sc.close();
+        System.out.println("a quantida de reais necessaria é: " + dolar.convert());
+    scan.close();
     }
 }

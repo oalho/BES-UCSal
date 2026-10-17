@@ -1,4 +1,4 @@
-package POO2Retângulo;
+package Retângulo;
 public class Retangulo{
     private double altura, largura;
 

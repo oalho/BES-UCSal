@@ -1,4 +1,4 @@
-package POO6Banco;
+package Banco;
 import java.util.Scanner;
 
 public class ExecutarConta{

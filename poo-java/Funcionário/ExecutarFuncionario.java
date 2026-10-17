@@ -1,4 +1,4 @@
-package POO3Funcionário;
+package Funcionário;
 import java.util.Scanner;
 
 public class ExecutarFuncionario{

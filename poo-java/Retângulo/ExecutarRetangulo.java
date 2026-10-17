@@ -1,4 +1,4 @@
-package POO2Retângulo;
+package Retângulo;
 import java.util.Scanner;
 public class ExecutarRetangulo{
     public static void main(String[]args){

@@ -1,7 +1,14 @@
-package POO4Notas;
+package Notas;
 public class Notas{
     private String nome;
-    private int n1, n2, n3;
+    private Integer n1, n2, n3;
+
+    public Notas(String nome, Integer n1, Integer n2, Integer n3){
+        this.nome = nome;
+        this.n1 = n1;
+        this.n2 = n2;
+        this.n3 = n3;
+    }
 
     public String getNome() {
         return nome;
@@ -35,11 +42,11 @@ public class Notas{
         this.n3 = n3;
     }
 
-    public int final(){
+    public float notaFinal(){
         return (n1 + n2 + n3) / 3;
     }
 
-    public int minimo(){
-        return 60 - Notas.final();
+    public float minimo(){
+        return 60 - notaFinal();
     }
 }

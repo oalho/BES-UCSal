@@ -1,4 +1,4 @@
-package POO6Banco;
+package Banco;
 
 public class Conta {
     private int n;

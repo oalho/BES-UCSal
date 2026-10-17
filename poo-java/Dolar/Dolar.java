@@ -1,9 +1,13 @@
-package POO5Dolar;
+package Dolar;
 
 public class Dolar{
     public double r, d;
 
+    public Dolar(Double d){
+        this.d = d;
+    }
+
     public double convert(){
-        return r / 5;
+        return d * 5;
     }
 }

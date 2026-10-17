@@ -1,4 +1,4 @@
-package POO7Pensionato;
+package Pensionato;
 
 public class Estudante {
     private String nome, email;
