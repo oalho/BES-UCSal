@@ -19,10 +19,13 @@ public class Main {
             String nome = scan.next();
             System.out.println("Preço:");
             Double preco = scan.nextDouble();
-
+            scan.nextLine();
+            
             switch(resposta){
                 case 1:
-                    LocalDate data = scan.next;
+                    System.out.println("data de fabricação");
+                    String dataString = scan.nextLine();
+                    LocalDate data = LocalDate.parse(dataString);
                     quadro.add(new ProdutoUsado(nome, preco, data));
                 break;
                 case 2:
@@ -31,14 +34,18 @@ public class Main {
                     quadro.add(new ProdutoImportado(nome, preco, taxa));
                 break;
             }
-            System.out.println();
-
-            System.out.println("Carrinho:");
-            for (Produto produto: quadro ){
-                System.out.println(produto.getNome() + produto.toString());
-            }
         }
-    
+
+
+        System.out.println();
+
+        System.out.println("Carrinho:");
+        
+        for (Produto produto: quadro ){
+            System.out.println(produto.getNome() + produto.toString());
+        }
+
     scan.close();
-    }
+    }  
 }
+
