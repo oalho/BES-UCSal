@@ -1,4 +1,4 @@
-package Forca;
+/*package Forca;
 
 public class Palavra {
     private Character resposta;
@@ -24,4 +24,4 @@ public class Palavra {
         }
         return false;
     }
-}
+}*/

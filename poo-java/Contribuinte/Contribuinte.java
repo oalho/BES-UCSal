@@ -25,9 +25,4 @@ public class Contribuinte {
         this.rendimento = rendimento;
     }
 
-    public Double imposto(){
-        if (ContribuinteJuridico){
-            
-        }
-    }
 }
