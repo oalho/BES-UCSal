@@ -4,6 +4,10 @@ public class Contribuinte {
     private String nome;
     private Double rendimento;
 
+    public Contribuinte(){
+        
+    }
+
     public Contribuinte(String nome, Double rendimento){
         this.nome = nome;
         this.rendimento = rendimento;
