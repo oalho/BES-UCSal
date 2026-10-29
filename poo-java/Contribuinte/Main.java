@@ -13,7 +13,9 @@ public class Main {
                 char cpfj = scan.next().charAt(0);
                 System.out.println("Nome:");
                 String nome = scan.next();
-                
+                if (cpfj == 'f'){
+                    
+                }
             }
 
 
