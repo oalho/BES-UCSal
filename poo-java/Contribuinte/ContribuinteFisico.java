@@ -1,5 +1,3 @@
-package Contribuinte;
-
 public class ContribuinteFisico extends Contribuinte{
     private String nome;
     private Double rendaAtual;

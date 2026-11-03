@@ -1,0 +1,54 @@
+hospital/enfermaria
+
+classes{ 
+
+    pessoa: String nome, Integer idade
+         ^ (herdam de pessoa)[
+        paciente: String condição, Integer id
+        medico: String especialidade, Integer id]
+    medicamento: String nome, Integer dosagemMg, String bula, Integer id
+    caso: Integer id, Paciente paciente, Medico medico, Medicamento medicamento
+}
+
+main{
+
+    -apresentação
+
+    -inicializar teste (cadastro de 7 objetos de cada classe)
+
+    -exibir opções: incluir, alterar, excluir, listar, listar em ordem buscar e sair
+
+    -se "sair" 
+        fim
+
+    -se "incluir"
+        perguntar qual objeto
+               -se paciente
+                    cadastrar medico e medicamento antes
+                    (decidi criar um objeto "caso", vai ter os 3 para não ter problema de alterar as outras e dar problema na construtor da classe paciente)
+        cadastrar o objeto
+        adicionar a ArrayList correspondente (usar if/switch para por no array certo)
+ 
+    -se "alterar" 
+        exibir lista (print for array)
+        escolher objeto (usar o id)
+        sobrescrever (apaga tudo e reescreve)
+ 
+    -se "excluir" 
+        exibir lista (print for array)
+        escolher objeto (usar o id)
+        excluir (remove)
+
+    -se "listar"
+        exibir lista (print for array)
+
+    -se "listar em ordem" 
+        perguntar objeto 
+        escolher atributo para ordenar    
+        exibir de forma ordenada (crescente)
+
+    -se "buscar"  
+        perguntar objeto
+        perguntar atributo (não só o id)
+        resultado
+}
